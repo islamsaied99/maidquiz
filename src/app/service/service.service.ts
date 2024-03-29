@@ -6,19 +6,16 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceService {
 
-  constructor( private client:HttpClient  ) { }
+  constructor(private client: HttpClient) { }
 
-private url= "https://reqres.in/api/users?page={page}"
-private urluser="https://reqres.in/api/users"
-userid:any;
-getallusers(){
-  return this.client.get(this.url)
-}
+  private url = "https://reqres.in/api/users?page={page}";
+  private urluser = "https://reqres.in/api/users";
 
-getuserByID(id:number){
-  return this.client.get(this.urluser+"/"+id);
-}
+  getallusers() {
+    return this.client.get(this.url);
+  }
 
-
-
+  getuserByID(id: number) {
+    return this.client.get(this.urluser + "/" + id);
+  }
 }

@@ -8,15 +8,13 @@
 <body>
   <nav class="navbar bg-body-tertiary navv">
     <div class="container-fluid cont">
-      <form class="d-flex  searchbar" role="search">
-        <input class="form-control" type="number" placeholder="Search by User ID and click Enter" aria-label="Search" [(ngModel)]="ID" (keyup.enter)="searchforuser()" name="id" >
-        
+      <form class="d-flex searchbar" role="search">
+        <input class="form-control" type="number" placeholder="Search by User ID and click Enter" aria-label="Search" [(ngModel)]="ID" (keyup.enter)="searchforuser()" name="id">
       </form>
       <button class="btn btn-primary" routerLink="/">Home</button>
-     
-     
     </div>
   </nav>
 </body>
 </html>
+
 

@@ -26,14 +26,7 @@
        position: relative; 
        top:410px;
    }
-   /* a{
-       position:relative;
-       font-size:20px;
-      top:60px;
-       left:90px;
-       z-index:5;
-       color:black;
-   } */
+
    .tower{
        height: 0px;
        width: 120px;
