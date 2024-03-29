@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import {  Router, RouterModule } from '@angular/router';
 import { ServiceService } from '../../service/service.service';
 
 @Component({
@@ -20,7 +20,7 @@ export class HeaderComponent {
   userSupport: any;
   userUrl: any;
   
-  constructor(private myActivated: ActivatedRoute, private service: ServiceService, private router: Router) {}
+  constructor( private router: Router) {}
 
   searchforuser() {
     if (this.ID != 0) {
